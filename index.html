@@ -4,55 +4,97 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Legal Docs – npXsoftware</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --primary-color: #0ea5e9;
+      --accent-color: #0369a1;
+      --text-color: #1f2937;
+      --bg-color: #f9fafb;
+      --card-bg: #ffffff;
+      --card-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
     body {
       margin: 0;
-      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      background-color: #f4f4f4;
-      color: #222;
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      line-height: 1.6;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     header {
-      background-color: #fff;
-      padding: 1rem 2rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      background-color: var(--card-bg);
+      padding: 1.5rem 2rem;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: center;
     }
 
     header img {
-      height: 40px;
+      height: 50px;
     }
 
     main {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 12px;
-      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
     }
 
     h1 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      color: #444;
+      font-size: 2.25rem;
+      color: #111827;
+      margin-bottom: 2rem;
+      text-align: center;
     }
 
     section {
-      margin-top: 2rem;
+      background: var(--card-bg);
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: var(--card-shadow);
+      margin-bottom: 2.5rem;
+      animation: fadeIn 0.8s ease-in-out;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-top: 0;
+      color: var(--primary-color);
+    }
+
+    h3 {
+      font-size: 1.125rem;
+      margin-top: 1.5rem;
+      color: var(--accent-color);
+    }
+
+    p {
+      margin-top: 1rem;
+      font-size: 1rem;
     }
 
     footer {
       text-align: center;
-      font-size: 0.9rem;
-      padding: 1rem;
-      color: #666;
+      font-size: 0.875rem;
+      padding: 2rem 1rem;
+      color: #6b7280;
+      background-color: #f3f4f6;
     }
 
     a {
-      color: #0070f3;
+      color: var(--accent-color);
       text-decoration: none;
     }
 
@@ -65,46 +107,91 @@
 
   <header>
     <img src="logo.png" alt="npXsoftware Logo" />
-    <nav>
-      <a href="/">Zurück zur Startseite</a>
-    </nav>
   </header>
 
   <main>
     <h1>Rechtliche Informationen</h1>
+
     <section>
       <h2>Impressum</h2>
       <p>
-        npXsoftware UG (haftungsbeschränkt)<br />
-        Musterstraße 1<br />
-        12345 Musterstadt<br />
-        Deutschland<br />
-        <br />
+        npXsoftware UG (haftungsbeschränkt) i. G.<br /><br />
+        Hafenstraße 122<br />
+        45359 Essen<br />
+        Deutschland<br /><br />
         Geschäftsführer: Philipp Wallutis, Norman Reddig<br />
-        E-Mail: info@npxsoftware.eu<br />
-        <br />
-        Eingetragen beim Amtsgericht Musterstadt, HRB 123456
+        E-Mail: info@npxsoftware.eu<br /><br />
+        Eingetragen beim Amtsgericht Essen, HRB [noch nicht erteilt]<br />
+        <em>(Hinweis: Die Gesellschaft befindet sich in Gründung. Die Eintragung im Handelsregister steht noch aus.)</em>
       </p>
     </section>
 
     <section>
       <h2>Datenschutzerklärung</h2>
       <p>
-        Eure Datenschutzerklärung kommt hier rein. Ich kann euch gern eine Vorlage erstellen,
-        die zu eurer Webanwendung passt (insbesondere falls ihr Dienste wie Google Fonts, Hosting, Tracking etc. verwendet).
+        Der Schutz Ihrer persönlichen Daten ist uns ein besonderes Anliegen. Wir verarbeiten auf dieser Website keine personenbezogenen Daten.
+      </p>
+
+      <h3>Hosting</h3>
+      <p>
+        Unsere Website wird bei <strong>GitHub Pages</strong> gehostet. Beim Aufruf der Seiten wird Ihre IP-Adresse technisch bedingt an den Server von GitHub übermittelt.
+        Wir selbst speichern oder analysieren keine dieser Verbindungsdaten.
+        Weitere Informationen zur Datenverarbeitung durch GitHub finden Sie unter:
+        <a href="https://docs.github.com/en/site-policy/privacy-policies/github-privacy-statement" target="_blank">GitHub Privacy Statement</a>.
+      </p>
+
+      <h3>Kontaktaufnahme per E-Mail</h3>
+      <p>
+        Wenn Sie uns per E-Mail kontaktieren, wird Ihre Nachricht inklusive Absenderadresse ausschließlich zur Bearbeitung Ihres Anliegens verwendet.
+        Diese Kommunikation erfolgt freiwillig. Es findet keine Weitergabe an Dritte statt.
+      </p>
+
+      <h3>Keine Cookies / Kein Tracking</h3>
+      <p>
+        Unsere Website verwendet keine Cookies, Tracking-Tools oder sonstige Technologien zur Analyse des Nutzerverhaltens.
+      </p>
+
+      <h3>Ihre Rechte</h3>
+      <p>
+        Sie haben jederzeit das Recht auf Auskunft über Ihre gespeicherten personenbezogenen Daten, deren Herkunft und Empfänger sowie den Zweck der Datenverarbeitung. Ebenso haben Sie ein Recht auf Berichtigung, Sperrung oder Löschung dieser Daten. Bitte wenden Sie sich hierzu an: info@npxsoftware.eu
+      </p>
+
+      <h3>Änderungen</h3>
+      <p>
+        Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie aktuellen rechtlichen Anforderungen anzupassen.
       </p>
     </section>
 
     <section>
       <h2>Nutzungsbedingungen</h2>
       <p>
-        Falls ihr allgemeine Geschäftsbedingungen (AGB) oder Nutzungsbedingungen habt, könnt ihr sie hier verlinken oder direkt anzeigen.
+        Die Nutzung dieser Website ist ausschließlich zu Informationszwecken gestattet. Es besteht kein Anspruch auf Verfügbarkeit oder Vollständigkeit der Inhalte.
+      </p>
+
+      <h3>Urheberrecht</h3>
+      <p>
+        Sämtliche Inhalte dieser Website, insbesondere Logos, Texte, Bilder und Grafiken, unterliegen dem Urheberrecht. Die Verwendung, Vervielfältigung oder Verbreitung bedarf der vorherigen schriftlichen Zustimmung der npXsoftware UG (haftungsbeschränkt) i. G.
+      </p>
+
+      <h3>Haftung für Inhalte</h3>
+      <p>
+        Trotz sorgfältiger inhaltlicher Kontrolle übernehmen wir keine Gewähr für die Richtigkeit, Vollständigkeit oder Aktualität der bereitgestellten Informationen. Die Nutzung der Inhalte erfolgt auf eigene Gefahr.
+      </p>
+
+      <h3>Externe Links</h3>
+      <p>
+        Diese Website kann Links zu externen Webseiten Dritter enthalten. Auf deren Inhalte haben wir keinen Einfluss. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Anbieter oder Betreiber verantwortlich. Zum Zeitpunkt der Verlinkung waren keine Rechtsverstöße erkennbar.
+      </p>
+
+      <h3>Geltendes Recht und Gerichtsstand</h3>
+      <p>
+        Es gilt das Recht der Bundesrepublik Deutschland. Gerichtsstand für alle Streitigkeiten ist – soweit gesetzlich zulässig – der Sitz der Gesellschaft in Essen.
       </p>
     </section>
   </main>
 
   <footer>
-    &copy; 2025 npXsoftware UG (haftungsbeschränkt) – All rights reserved
+    &copy; 2025 npXsoftware UG (haftungsbeschränkt) i. G. – All rights reserved
   </footer>
 
 </body>
