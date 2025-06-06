@@ -16,18 +16,6 @@ Die `index.html` wird direkt aus dem Hauptverzeichnis bereitgestellt.
 
 ---
 
-## 🧑‍💼 Über uns
-
-**npXsoftware UG (haftungsbeschränkt) i. G.**  
-Hafenstraße 122  
-45359 Essen  
-Deutschland
-
-Geschäftsführer: Philipp Wallutis, Norman Reddig  
-E-Mail: [info@npxsoftware.eu](mailto:info@npxsoftware.eu)
-
----
-
 ## ⚠️ Haftungshinweis
 
 Diese Website wird nach bestem Wissen gepflegt, stellt aber keine Rechtsberatung dar.  
