@@ -12,7 +12,7 @@ Diese Seite wird kostenlos über **GitHub Pages** veröffentlicht.
 Die `index.html` wird direkt aus dem Hauptverzeichnis bereitgestellt.
 
 🔗 Live-Version:  
-**https://npxsoftware.github.io/legal-docs/** *(URL ggf. anpassen)*
+**https://npxsoftware-gmbh.github.io/legal-docs/** *(URL ggf. anpassen)*
 
 ---
 
